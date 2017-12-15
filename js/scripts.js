@@ -1,17 +1,15 @@
-var total = 0;
-
 function Pizza(size, garnish){
   this.size = size;
   this.garnish = garnish;
+  this.total = 0;
 }
 
-Pizza.prototype.cost = function(){
-  for (var i = 0; i <= this.garnish.length-1; i++) {
-    debugger
-    totalGarnish += garnish[i] * 2
+Pizza.prototype.garnishCost = function(){
+  for (var i = 0; i <= this.garnish.length; i++) {
+    var itemCount = [i]
+    var totalGarnish = itemCount * 2.50
   }
-  debugger
-  total = totalGarnish
+  this.total = totalGarnish
 }
 
 
@@ -31,6 +29,6 @@ $(document).ready(function(){
     newPizza.cost();
     //$(".size-result").text(size);
     //$(".topping-result").text(garnish);
-    $(".grandtotal").text(8.00);
+    $(".grandtotal").text(" " + newPizza.total);
   });
 });
