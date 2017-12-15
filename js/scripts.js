@@ -4,13 +4,24 @@ function Pizza(size, garnish){
   this.total = 0;
 }
 
-Pizza.prototype.garnishCost = function(){
+Pizza.prototype.cost = function(){
   for (var i = 0; i <= this.garnish.length; i++) {
     var itemCount = [i]
     var totalGarnish = itemCount * 2.50
   }
+  debugger
   this.total = totalGarnish
+  if(this.size === "Family"){
+    this.total += 25;
+  }else if(this.size === "Large"){
+    this.total += 20;
+  }else if(this.size === "Medium"){
+    this.total += 15;
+  }else{
+    this.total += 10;
+  }
 }
+
 
 
 
