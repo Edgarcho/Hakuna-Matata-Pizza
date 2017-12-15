@@ -24,12 +24,20 @@
   letter-spacing: 1px;
   margin-bottom: 60px;
 }
+body{
+  background: #ECF0FA;
+}
 form{
   background: linear-gradient(to bottom, #f2fcfe, #1c92d2);
   padding: 5px;
   font-size: 20px;
   font-family: 'allerta stencil font';
 }
-body{
-  background-image: url(../img/skies.jpeg);
+#order-result{
+  display: none;
+  font-size: 20px;
+  font-family: 'allerta stencil font';
+}
+.grandtotal{
+  color: red;
 }

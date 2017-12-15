@@ -9,7 +9,6 @@ Pizza.prototype.cost = function(){
     var itemCount = [i]
     var totalGarnish = itemCount * 2.50
   }
-  debugger
   this.total = totalGarnish
   if(this.size === "Family"){
     this.total += 25;
@@ -22,11 +21,6 @@ Pizza.prototype.cost = function(){
   }
 }
 
-
-
-
-
-
 //User Interface Logic
 $(document).ready(function(){
   $("form#order-option").submit(function(event){
@@ -38,8 +32,7 @@ $(document).ready(function(){
     });
     newPizza = new Pizza(size,garnish);
     newPizza.cost();
-    //$(".size-result").text(size);
-    //$(".topping-result").text(garnish);
-    $(".grandtotal").text(" " + newPizza.total);
+    $(".grandtotal").text("$" + " " + newPizza.total);
+    $("#order-result").show();
   });
 });
