@@ -1,6 +1,7 @@
 .main-header{
   background-image: url(http://clingdom.com/wp-content/uploads/2015/09/header-cloud.jpg);
   padding: 30px;
+  margin: auto;
 }
 .main-header h1{
   color: #67BE9B;
@@ -9,7 +10,7 @@
 	font-weight: bold;
 	line-height: 100px;
 	letter-spacing: 20px;
-	text-indent: -60px;
+	text-indent: -30px;
 	text-transform: uppercase;
 }
 .main-header h2{
@@ -23,6 +24,12 @@
   letter-spacing: 1px;
   margin-bottom: 60px;
 }
+form{
+  background: linear-gradient(to bottom, #f2fcfe, #1c92d2);
+  padding: 5px;
+  font-size: 20px;
+  font-family: 'allerta stencil font';
+}
 body{
-  background-color: yellow;
+  background-image: url(../img/skies.jpeg);
 }
