@@ -1,9 +1,18 @@
+var total = 0;
+
 function Pizza(size, garnish){
   this.size = size;
   this.garnish = garnish;
-  this.total = 0;
 }
 
+Pizza.prototype.cost = function(){
+  for (var i = 0; i <= this.garnish.length-1; i++) {
+    debugger
+    totalGarnish += garnish[i] * 2
+  }
+  debugger
+  total = totalGarnish
+}
 
 
 
@@ -19,8 +28,9 @@ $(document).ready(function(){
       garnish.push($(this).val());
     });
     newPizza = new Pizza(size,garnish);
-    $(".size-result").text(size);
-    $(".topping-result").text(garnish);
+    newPizza.cost();
+    //$(".size-result").text(size);
+    //$(".topping-result").text(garnish);
     $(".grandtotal").text(8.00);
   });
 });
