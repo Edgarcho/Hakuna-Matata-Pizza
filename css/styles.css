@@ -37,9 +37,16 @@ body{
   font-size: 20px;
   line-height: 30px;
 }
+#order-option{
+  background-image: url(../img/nature.jpeg);
+  width: 1200px;
+}
 #order-result{
   display: none;
-  font-size: 20px;
+  background-image: url(../img/nature.jpeg);
+  width: 1200px;
+  font-size: 30px;
+  text-align: center;
   font-family: 'allerta stencil font';
 }
 .grandtotal{
