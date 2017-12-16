@@ -32,9 +32,10 @@ $(document).ready(function(){
     });
     newPizza = new Pizza(size,garnish);
     newPizza.cost();
+    newPizza.garnish = newPizza.garnish.join(", ");
     $("#order-result").show();
     $(".grandtotal").text("$" + " " + newPizza.total);
-    $(".size-result").text(" "+ newPizza.size);
+    $(".size-result").text(" " + newPizza.size);
     $(".topping-result").text(" " + newPizza.garnish);
   });
 });
