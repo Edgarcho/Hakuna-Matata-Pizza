@@ -10,11 +10,11 @@
   </head>
   <body>
     <div class="container">
-      <header class="main-header">
+      <header>
         <h1>Hakuna-Matata Pizza</h1>
         <h2>It means no worries we gotcha you!!</h2>
       </header>
-      <form id="order-option" >
+      <form id="order-option">
         <div class="form-group">
           <h3>Choose Size</h3>
           <select class="form-control" id="size">
@@ -25,26 +25,28 @@
           </select>
         </div>
         <div class="form-group">
-          <p>Choose Toppings:</p>
-          <label>Select all the topping you want:</label><br>
-            <input type="checkbox" name="toppings" value="Cheese">Cheese<br>
-            <input type="checkbox" name="toppings" value="Pepperoni">Pepperoni<br>
-            <input type="checkbox" name="toppings" value="Italian Sausage">Italian Sausage<br>
-            <input type="checkbox" name="toppings" value="Bacon">Bacon<br>
-            <input type="checkbox" name="toppings" value="Ham">Ham<br>
-            <input type="checkbox" name="toppings" value="Onion">Onion<br>
-            <input type="checkbox" name="toppings" value="Black Olives">Black Olives<br>
-            <input type="checkbox" name="toppings" value="Pineapple">Pineapple<br>
-            <input type="checkbox" name="toppings" value="Tomatoes">Tomatoes<br>
+          <div class="checkboxs">
+            <p>Choose Pizza Toppings:</p>
+            <label>Select all the topping you want:</label><br>
+            <input type="checkbox" name="toppings" value="Cheese"> Cheese<br>
+            <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
+            <input type="checkbox" name="toppings" value="Italian Sausage"> Italian Sausage<br>
+            <input type="checkbox" name="toppings" value="Bacon"> Bacon<br>
+            <input type="checkbox" name="toppings" value="Ham"> Ham<br>
+            <input type="checkbox" name="toppings" value="Onion"> Onion<br>
+            <input type="checkbox" name="toppings" value="Black Olives"> Black Olives<br>
+            <input type="checkbox" name="toppings" value="Pineapple"> Pineapple<br>
+            <input type="checkbox" name="toppings" value="Tomatoes"> Tomatoes<br>
+          </div>
         </div>
-      <button type="type" class="btn btn-warning">Place Order</button>
+        <button type="type" class="btn btn-warning">Place Order</button>
       </form>
-        <div id="order-result">
-          <h2>Order Info</h2>
-          <p>Size: <span class="size-result"></span></p>
-          <p>Toppings:<br><span class="topping-result"></span></p>
-          <p>Final Cost: <span class="grandtotal"></span></p>
-        </div>
+      <div id="order-result">
+        <h2>Order Info</h2>
+        <p>Size: <span class="size-result"></span></p>
+        <p>Toppings:<br><span class="topping-result"></span></p>
+        <p>Final Cost: <span class="grandtotal"></span></p>
+      </div>
     </div>
   </body>
 </html>
